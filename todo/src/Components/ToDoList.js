@@ -17,7 +17,7 @@ class ToDoList extends React.Component {
     handleChanges = e => this.setState({ newTask: e.target.value });
 
     render() {
-
+        // console.log("todolist object", this.props.toDoList)
         return (
             <div>
                 <h2>ToDoList Header</h2>

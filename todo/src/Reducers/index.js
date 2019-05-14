@@ -1,4 +1,4 @@
-import {ADD_TASK} from '../Actions';
+import {ADD_TASK, COMPLETE_TASK, DELETE_TASK} from '../Actions';
 
 const initialState = {
     toDoList: [
@@ -22,6 +22,19 @@ export const reducer = (state = initialState, action) => {
                         completed: false
                     }],
                 nextID: state.nextID + 1
+            };
+        case COMPLETE_TASK:
+            // console.log('complete task');
+            return {
+                ...state,
+                toDoList: state.toDoList.map(todo => todo.id === action.payload ? 
+                    { ...todo, completed: !todo.completed } : todo)
+            };
+        case DELETE_TASK:
+            // console.log('delete task');
+            return {
+                ...state,
+                toDoList: state.toDoList.filter(todo => todo.id !== action.payload)
             };
         default:
             return state;
