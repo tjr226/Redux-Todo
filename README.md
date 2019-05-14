@@ -16,18 +16,18 @@ Topics:
 
 ### Initialize Project
 
-* [ ] Run `create-react-app todo` to create your starter application.
-* [ ] Now that you have created your `todo` directory, cd into it.
-* [ ] `yarn add redux react-redux` or `npm install --save redux react-redux` This command will install the needed dependencies.
-* [ ] You will create a todo list using React and Redux.
-* [ ] Use the movies project as a reference.
-* [ ] The general flow of steps will be to create your store, create your reducers, create your containers, and then create the action creators.
-* [ ] When you add a new item to the todo array an action containing the new todo object will be dispatched through all of the reducers.
-* [ ] To display the todo list you will create a container that receives the `todos` array as a prop and then uses `map` to display it as an unordered list.
+* [ x ] Run `create-react-app todo` to create your starter application.
+* [ x ] Now that you have created your `todo` directory, cd into it.
+* [ x ] `yarn add redux react-redux` or `npm install --save redux react-redux` This command will install the needed dependencies.
+* [ x ] You will create a todo list using React and Redux.
+* [ x ] Use the movies project as a reference.
+* [ x ] The general flow of steps will be to create your store, create your reducers, create your containers, and then create the action creators.
+* [ x ] When you add a new item to the todo array an action containing the new todo object will be dispatched through all of the reducers.
+* [ x ] To display the todo list you will create a container that receives the `todos` array as a prop and then uses `map` to display it as an unordered list.
 
 ### State Tree
 
-* [ ] Your application should have an input field, a submit button, and a list of items that represents your todo list.
+* [ x ] Your application should have an input field, a submit button, and a list of items that represents your todo list.
 * [ ] Your application's state tree should have a single property called `todos`. It should take the same form as the object shown below.
 
 
@@ -47,7 +47,7 @@ Topics:
 }
 ```
 
-* [ ] You will create your store in `src/index.js`. The `<Provider >` component will wrap `<App />` and you will pass the created store into `<Provider >` as one of its properties. Use [this](https://github.com/SunJieMing/redux-example-movies) repository as a reference.
+* [ x ] You will create your store in `src/index.js`. The `<Provider >` component will wrap `<App />` and you will pass the created store into `<Provider >` as one of its properties. Use [this](https://github.com/SunJieMing/redux-example-movies) repository as a reference.
 
 ### React
 
